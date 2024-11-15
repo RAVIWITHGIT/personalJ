@@ -40,6 +40,17 @@ public class userInput{
         // String str = sc.nextLine();
         // System.out.println(str);
 
+        // ******************** Task
+        float totalMarks = 500f;
+        float hindi = sc.nextFloat();
+        float English = sc.nextFloat();
+        float science = sc.nextFloat();
+        float Math = sc.nextFloat();
+        float Physics = sc.nextFloat();
+        float total = hindi+English+science+Math+Physics;
+        float percentage = (total/totalMarks)*100f;
+        System.out.println(total);
+        System.out.println(percentage);
 
 
     }
