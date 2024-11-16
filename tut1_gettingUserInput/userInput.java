@@ -41,17 +41,37 @@ public class userInput{
         // System.out.println(str);
 
         // ******************** Task
-        float totalMarks = 500f;
-        float hindi = sc.nextFloat();
-        float English = sc.nextFloat();
-        float science = sc.nextFloat();
-        float Math = sc.nextFloat();
-        float Physics = sc.nextFloat();
-        float total = hindi+English+science+Math+Physics;
-        float percentage = (total/totalMarks)*100f;
-        System.out.println(total);
-        System.out.println(percentage);
+        // float totalMarks = 500f;
+        // float hindi = sc.nextFloat();
+        // float English = sc.nextFloat();
+        // float science = sc.nextFloat();
+        // float Math = sc.nextFloat();
+        // float Physics = sc.nextFloat();
+        // float total = hindi+English+science+Math+Physics;
+        // float percentage = (total/totalMarks)*100f;
+        // System.out.println(total);
+        // System.out.println(percentage);
 
+
+        // ***************** convert kilometer to milles
+        // System.out.print("enter your kilometer :");
+        // float getKm = sc.nextFloat();
+        // float getMiles = getKm*0.62137f;
+        // System.out.println("Km "+getKm+" To miles "+getMiles);
+
+
+        //************************* 
+        // int v = 2;
+        // int u = 4;
+        // int result = v*v-u*u;
+        // System.out.println(result);
+
+        // ***********************
+        int a = 2;
+        int b = 4;
+        int d = 6;
+        int result = a*b-d;
+        System.out.println(result);
 
     }
 }
