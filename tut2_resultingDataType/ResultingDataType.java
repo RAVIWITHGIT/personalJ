@@ -21,5 +21,11 @@ public class ResultingDataType{
         System.out.println(b);
         Character c= 'a';
         System.out.println(++c);
+        int v = 5;
+        int u = 3;
+        int a = 2;
+        int s = 6;
+        int result = (v*v-u*u)/(2*a*s);  
+        System.out.println(result);
     }
 }
