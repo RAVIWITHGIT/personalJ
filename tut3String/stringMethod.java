@@ -134,5 +134,22 @@ public class stringMethod{
         // System.out.println(name);
         // System.out.println(getResult);
         // System.out.println(getResult2);
+
+
+
+
+
+        /* ********************************** Escape sequence Character **********************
+        if you add new line , tab space , single quote , backslash then use \ (backslash) after that use 
+        /n --> new line
+        /t --> tab space
+        /' --> add single quote,
+        //--> add backslash
+`       */
+
+        System.out.println("hello ravi \n how are yoy");
+        System.out.println("hello ravi \t how are yoy");
+        System.out.println("hello \'ravi\'  how are yoy");
+        System.out.println("hello \\ravi  how are yoy");
     }
 }
