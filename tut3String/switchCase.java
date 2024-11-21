@@ -19,7 +19,7 @@ public class switchCase{
         // }
 
 
-        // ******** second way to create switch case
+        // ******** second way to create switch case , enhance switch case
         // Character ch = 'r';
         // switch(ch){
         //     case 'r' -> System.out.println("your name start with r character");
