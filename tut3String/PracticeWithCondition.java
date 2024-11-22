@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class PracticeWithCondition{
     public static void main(String args[]){
@@ -89,5 +90,55 @@ public class PracticeWithCondition{
         // else if(getUrl.endsWith(".in")){
         //     System.out.println("this is indian website");
         // }
+
+        // ************************************************
+        Random randomNumber = new Random();
+        Scanner sc = new Scanner(System.in);
+        //1 for Rock and 2 for paper and 3 for scissor
+        for(int i=0; i<3; i++){
+            String userValue = "";
+            String cValue = "";
+            int computerValue = randomNumber.nextInt(3)+1;
+        
+
+        System.out.print("enter your value , 1  for Rock and 2 for paper and 3 for scissor :");
+        int myValue = sc.nextInt();
+
+        if(myValue==1){
+            userValue = "Rock";
+        }else if(myValue==2){
+            userValue = "paper";
+        }else if(myValue==3){
+            userValue = "scissor";
+        }
+
+        if(computerValue==1){
+            cValue = "Rock";
+        }else if(computerValue==2){
+            cValue = "paper";
+        }else if(computerValue==3){
+            cValue = "scissor";
+        }
+
+
+
+        if((myValue==computerValue) ||(myValue==computerValue) ||(myValue==computerValue) ){
+            System.out.println("tie");
+        }
+
+        else if((myValue==1 && computerValue==3) || (myValue==3 && computerValue==2) || (myValue==2 && computerValue==1)){
+            System.out.printf("you are win , your value is %s and computer value is %s",userValue,cValue);
+        }else{
+            System.out.printf("computer are win , your value is %s and computer value is %s",userValue,cValue);
+        }
+
+
+        System.out.println();
+        }
+
+        
+
+
+
     }
 }
