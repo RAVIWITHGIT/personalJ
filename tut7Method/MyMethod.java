@@ -23,6 +23,7 @@ public class MyMethod {
         return result;
     }
 
+    //
     public static void main(String[] args) {
         MyMethod obj = new MyMethod();
         int getReturnValue = obj.sum(2, 3);
