@@ -6,10 +6,10 @@ you have 2 way to create String in java
 string are immutable and cannot be changed original string , but we can do reassign . more know in future
  */
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class MyString{
-    public static void main(String args[]){
+public class MyString {
+    public static void main(String args[]) {
         // String name = new String("ravi");
         // String lastName = "lakshakar";
         // lastName = "shyam";
@@ -18,37 +18,37 @@ public class MyString{
 
         // Scanner sc = new Scanner(System.in);
         // String st = sc.next();
-        // System.out.println(st); 
+        // System.out.println(st);
 
         // String st = sc.nextLine();
-        // System.out.println(st); 
+        // System.out.println(st);
 
-
-        // ******************************* System.out.print() --> after code is come in same line after print code
+        // ******************************* System.out.print() --> after code is come in
+        // same line after print code
         // String getValue = "ravi";
         // String lastName = "lakshakar";
         // System.out.print(getValue);
         // System.out.print(lastName);
 
-
-        // ******************************* System.out.println() --> after code is print in new line after print code
+        // ******************************* System.out.println() --> after code is print
+        // in new line after print code
         // String getValue = "ravi";
         // String lastName = "lakshakar";
         // System.out.println(getValue);
         // System.out.println(lastName);
 
-
-        // **************************** System.out.printf() 
+        // **************************** System.out.printf()
         /*
-        %d for int
-        %f for float
-        %c for char
-        %s for string
-        %b for boolean
+         * %d for int
+         * %f for float
+         * %c for char
+         * %s for string
+         * %b for boolean
          */
         // String getValue = "ravi";
         // String lastName = "lakshakar";
-        // System.out.printf("My first name is %s and last name is %s ",getValue,lastName);
+        // System.out.printf("My first name is %s and last name is %s
+        // ",getValue,lastName);
 
         // ****
         // int a = 20;
@@ -71,10 +71,10 @@ public class MyString{
         // System.out.printf("this condition is %b",b);
         // System.out.printf("this condition is %B",b);
 
-        // ********* %n for new line and use comma between % and d for add comma in digit
+        // ********* %n for new line and use comma between % and d for add comma in
+        // digit
         // int a=10000;
         // System.out.printf("%,d%n",a);
 
-        
     }
 }
