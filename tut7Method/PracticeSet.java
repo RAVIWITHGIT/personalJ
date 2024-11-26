@@ -76,6 +76,6 @@ public class PracticeSet {
         // System.out.println(result);
         // int result = fibonacciSeries(5);
         // System.out.println(result);
-        printPattern(5);
+        // printPattern(5);
     }
 }
