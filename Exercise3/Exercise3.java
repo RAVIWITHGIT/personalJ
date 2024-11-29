@@ -11,6 +11,7 @@ class Exercise3Class {
     public Exercise3Class() {
         Random generateRandom = new Random();
         getNumber = generateRandom.nextInt(10);
+        System.out.println(getNumber);
     }
 
     public void takeUserInput(int n) {
@@ -18,13 +19,15 @@ class Exercise3Class {
     }
 
     public boolean isCorrectNumber() {
-        if (getNumber != getInput) {
-            noOfGuesses++;
-            return true;
-        } else {
-            noOfGuesses++;
+        noOfGuesses++;
+        if (getInput == getNumber) {
             return false;
+        } else if (getInput < getNumber) {
+            System.out.println("too low..");
+        } else if (getInput > getNumber) {
+            System.out.println("Too high");
         }
+        return true;
     }
 
     public void result() {
