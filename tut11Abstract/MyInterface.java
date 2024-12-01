@@ -4,7 +4,8 @@
 3. it compulsory that use  all interface method in subClass
 4. we can not modify interface properties in subclass 
 5. when use interface method in sub class then make method as public
-5. more read in future
+6. we can not required write public keyword in interface because this is by default
+7. more read in future
  */
 
 // package tut11Abstract;
@@ -26,6 +27,8 @@ interface Electrical {
 }
 
 class Modified implements Bicycle, Electrical {
+    int speed = 60;
+
     public void applyBreak() {
         System.out.println("apply break");
     }
@@ -35,7 +38,7 @@ class Modified implements Bicycle, Electrical {
     }
 
     public void lightColor(String color) {
-        System.err.printf("on %s light", color);
+        System.err.printf("on %s light\n", color);
     }
 }
 
@@ -44,5 +47,10 @@ public class MyInterface {
         Modified mix = new Modified();
         mix.applyBreak();
         mix.lightColor("red");
+        System.out.println(mix.speed);
+
+        // we can not modified in here
+        // mix.speed = 50;
+
     }
 }
