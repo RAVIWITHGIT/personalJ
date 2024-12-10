@@ -22,8 +22,33 @@ Summary: When to Use Each
 3.When you don’t need thread safety and you don’t want the overhead of a doubly-linked list like in LinkedList.
  */
 
+import java.util.ArrayDeque;
+import java.util.Iterator;
+
 public class My3ArrayDeque {
     public static void main(String args[]) {
-        System.out.println("hello ravi");
+        ArrayDeque<Integer> ad1 = new ArrayDeque<>();
+        ad1.add(10);
+        ad1.add(20);
+        ad1.add(30);
+        ad1.add(40);
+        ad1.add(50);
+
+        ad1.addFirst(70);
+
+        System.out.println(ad1.getFirst());
+        System.out.println(ad1.getLast());
+        System.out.println(ad1);
+
+        // ** if you want iterator element in descending order
+        Iterator value = ad1.descendingIterator();
+        while (value.hasNext()) {
+            System.out.println(value.next());
+        }
+
+        // *********** if you get head element and remove then use poll() method
+        System.err.println(ad1.poll());
+        System.out.println(ad1);
+
     }
 }
