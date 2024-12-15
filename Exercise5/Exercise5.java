@@ -2,6 +2,20 @@
 
 import java.util.Scanner;
 
+class canNotUseThisNumber extends Exception {
+    @Override
+    public String toString() {
+        return "Cannot use 8 or 9 number";
+    }
+}
+
+class canNotDivideByZero extends Exception {
+    @Override
+    public String toString() {
+        return "Cannot divide by zero";
+    }
+}
+
 class largeNumber extends Exception {
     public largeNumber(String str) {
         super(str);
@@ -37,6 +51,10 @@ public class Exercise5 {
             if (firstNumber > 100000) {
                 throw new largeNumber("you can not enter value larger than 100000");
             }
+            if (firstNumber == 8 || firstNumber == 9) {
+                throw new canNotUseThisNumber();
+            }
+
             // ******** get symbol
             System.out.print("enter Symbol :");
             char symbol = Sc.next().charAt(0);
@@ -51,6 +69,12 @@ public class Exercise5 {
             if (secondNumber > 100000) {
                 throw new largeNumber("you can not enter value larger than 100000");
             }
+            if (secondNumber == 8 || secondNumber == 9) {
+                throw new canNotUseThisNumber();
+            }
+            if (symbol == '/' && secondNumber == 0) {
+                throw new canNotDivideByZero();
+            }
 
             if (symbol == '+') {
                 int result = firstNumber + secondNumber;
@@ -64,9 +88,8 @@ public class Exercise5 {
             } else if (symbol == '/') {
                 int result = firstNumber / secondNumber;
                 System.out.println(result);
-            } else {
-
             }
+
         } catch (Exception e) {
             System.out.println(e);
         }
