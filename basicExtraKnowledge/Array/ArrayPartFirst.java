@@ -4,19 +4,22 @@ public class ArrayPartFirst {
     public static void main(String args[]) {
         int number[] = { 1, 2, 3, 4, 5 };
         System.out.println(number); /*
-                                     * output ==> [I@1372ed45 , [ mean array and I mean Integer and all rest value
+                                     * output ==> (hexadecimal memory address) [I@1372ed45 , [ mean array and I mean
+                                     * Integer and all rest value
                                      * (@1372ed45) is random value
                                      */
 
         double mydoble[] = { 2.34, 5.66 };
         System.out.println(mydoble); /*
-                                      * output ==> [D@797badd3 , [ mean array and D mean double and all rest value
+                                      * output ==>(hexadecimal memory address) [D@797badd3 , [ mean array and D mean
+                                      * double and all rest value
                                       * (@797badd3) is random value
                                       */
 
         float myfloat[] = { 2.34f, 5.66f };
         System.out.println(myfloat); /*
-                                      * output ==> [F@3f200884 , [ mean array and F mean float and all rest value
+                                      * output ==>(hexadecimal memory address) [F@3f200884 , [ mean array and F mean
+                                      * float and all rest value
                                       * (@3f200884) is random value
                                       */
 
@@ -62,6 +65,15 @@ public class ArrayPartFirst {
         for (double d : arr5) {
             System.out.println(d);
         }
+
+        // ******************************** 2D and 3D array
+        int arr6[][] = new int[2][2];
+        System.out.println(arr6);
+
+        int arr7[][][] = new int[2][2][2];
+        System.out.println(arr7);
+
+        // 3d array also call to array of array or jagged array
 
     }
 }
