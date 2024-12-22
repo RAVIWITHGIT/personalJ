@@ -1,0 +1,3 @@
+if you add final keyword with super class then you can not use inheritance;
+if you add final keyword with class method then you can not use method overriding;
+if you add final keyword with variable then you can not change variable value;

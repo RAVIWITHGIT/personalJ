@@ -4,10 +4,16 @@ if we want pass class object bia method then we use this keyword , because this 
 */
 
 class firstClas {
+    // class properties also called instance variable
     int adc;
 
     // ********** agar hum is tareeke so karate hai to vah samajh hee nahin paega ki
     // adc koi property hai ya koee parameter hai
+    /*
+     * if properties and parameter name is same then use "this" keyword with
+     * instance variable
+     */
+    // variable
     // public firstClas(int adc) {
     // adc = adc;
     // }
