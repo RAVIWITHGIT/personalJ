@@ -13,7 +13,7 @@
 // interface Bicycle {
 //     int speed = 30;
 
-//     void applyBreak();
+//     void applyBreak();   //by default is public
 
 //     void speedUp();
 
