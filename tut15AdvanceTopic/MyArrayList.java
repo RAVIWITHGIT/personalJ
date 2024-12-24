@@ -9,6 +9,8 @@ public class MyArrayList {
         li.add(12);
         li.add(13);
         li.add(14);
+        li.remove(12); // give direct value
+        li.remove(0); // also we can remove by index
 
         // also we we can add element in specific position
         li.add(0, 50);
