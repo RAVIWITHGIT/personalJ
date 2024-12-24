@@ -21,6 +21,10 @@ public class My2LinkList {
         // add element in starting position
         li.addFirst(200);
 
+        // also we can remove
+        // li.removeFirst();
+        // li.removeLast();
+
         // print head of the list
         System.out.println(li.element());
 
